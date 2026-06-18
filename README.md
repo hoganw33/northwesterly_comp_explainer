@@ -59,22 +59,56 @@ tier.
   The model answers against the priced data and current plan rules. Your key is used only
   for the request and never stored.
 
-## Run locally
+## Getting started (first-time setup)
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+This app runs on your own computer. If you've never used Python before, follow
+these steps in order.
 
-Then open the local URL Streamlit prints (usually http://localhost:8501).
+### 1. Install Python
 
-## Deploy free on Streamlit Community Cloud
+Download Python (3.9 or newer) from https://www.python.org/downloads/ and run
+the installer.
 
-1. Push this repo to GitHub.
-2. At share.streamlit.io, create a new app pointing at `app.py`.
-3. The calculator and dashboard run free for everyone. The Claude Q&A layer
-   prompts each visitor for their own Anthropic API key, so there are no API
-   costs to the host.
+**Important (Windows):** on the first screen of the installer, check the box
+**"Add Python to PATH"** before clicking Install. This lets your computer find
+Python from the terminal.
+
+Verify it worked by opening a terminal and running:
+
+    python --version
+
+You should see a version number like `Python 3.12.x`. (On Mac, use `python3`.)
+
+### 2. Get the files
+
+Download this repository (green **Code** button → **Download ZIP**) and unzip
+it, or clone it with git. Keep all the files together in one folder —
+`data.xlsx` must sit next to `app.py`.
+
+### 3. Open a terminal in the project folder
+
+- **Windows:** open the folder in File Explorer, click the address bar, type
+  `cmd`, and press Enter.
+- **Mac:** right-click the folder → **New Terminal at Folder**.
+
+### 4. Install the dependencies (one time)
+
+    pip install -r requirements.txt
+
+### 5. Run the app
+
+    python -m streamlit run app.py
+
+The app opens automatically in your web browser. If your first launch asks for
+an email address, just press Enter to skip it — it's optional.
+
+To stop the app later, click the terminal and press `Ctrl + C`.
+
+### 6. (Optional) Enable the Claude Q&A feature
+
+The calculator and dashboard work with no setup. The natural-language Q&A box at
+the bottom needs an Anthropic API key, which you enter in the app at runtime —
+it is never stored. Get a key at https://console.anthropic.com.
 
 ## Files
 
