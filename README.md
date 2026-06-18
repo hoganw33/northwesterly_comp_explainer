@@ -1,4 +1,4 @@
-# Northwesterly Cloud — Commission Plan Explainer & What-If Modeler
+# Northwesterly Cloud - Commission Plan Explainer & What-If Modeler
 
 An interactive tool that explains every seller's commission payout in plain
 language and lets you stress test the plan against real performance data in
@@ -18,11 +18,11 @@ distribution and budget impact of any change before you ship it.
 ## What's the plan, Stan?
 
 The default plan follows recognized SaaS compensation best practice rather than
-arbitrary numbers, using public information from ZS and WorldAtWork:
+arbitrary numbers, aligned with widely recognized SaaS comp practice (e.g., WorldatWork, ZS):
 
 | Attainment | Payout factor (x variable target) | Rationale |
 |---|---|---|
-| < 50% | 0 — threshold gate | Avoids paying commission to sellers not covering their cost |
+| < 50% | 0 - threshold gate | Avoids paying commission to sellers not covering their cost |
 | 50–100% | proportional | Standard ramp to quota |
 | 100–110% | +1.5x on each marginal point | First accelerator tier, reachable by the majority |
 | 110%+ | +2.0x on each marginal point, uncapped | Rewards overperformance; top tier ≈ President's Club |
@@ -42,19 +42,19 @@ Design choices grounded in practice:
   without penalizing the broad middle.
 
 Validated against the 200-seller dataset, the default plan yields ~3% gated to
-zero, ~44% landing within +/-15% of quota, and ~13% reaching the President's Club
+zero, ~44% landing within 90–115% of quota, and ~13% reaching the President's Club
 tier.
 
 ## Features
 
-- **Live what-if levers** — gate, tier ceiling, both accelerators, and an
+- **Live what-if levers**  gate, tier ceiling, both accelerators, and an
   optional cap. The whole population updates dynamically. KPIs show spend delta
   versus the best practice baseline.
-- **Population dashboard** — earnings distribution by role, payout curve versus
+- **Population dashboard** - earnings distribution by role, payout curve versus
   baseline, per-band breakdown, top earner by role.
-- **Seller explainer** — pick any seller and see an auditable, step-by-step
+- **Seller explainer** - pick any seller and see an auditable, step-by-step
   payout calculation.
-- **Claude Q&A layer (optional, bring-your-own-key)** — ask natural-language
+- **Claude Q&A layer (optional, bring-your-own-key)** - ask natural-language
   questions like "who would be underwater if we capped at 130%?" or "How does the plan work for an AE?" 
   The model answers against the priced data and current plan rules. Your key is used only
   for the request and never stored.
@@ -82,8 +82,8 @@ You should see a version number like `Python 3.12.x`. (On Mac, use `python3`.)
 ### 2. Get the files
 
 Download this repository (green **Code** button → **Download ZIP**) and unzip
-it, or clone it with git. Keep all the files together in one folder —
-`data.xlsx` must sit next to `app.py`.
+it, or clone it with git. Keep all the files together in one folder -
+`northwesterly_cloud_comp_data.xlsx` must sit next to `app.py`.
 
 ### 3. Open a terminal in the project folder
 
@@ -100,14 +100,14 @@ it, or clone it with git. Keep all the files together in one folder —
     python -m streamlit run app.py
 
 The app opens automatically in your web browser. If your first launch asks for
-an email address, just press Enter to skip it — it's optional.
+an email address, just press Enter to skip it - it's optional.
 
 To stop the app later, click the terminal and press `Ctrl + C`.
 
 ### 6. (Optional) Enable the Claude Q&A feature
 
 The calculator and dashboard work with no setup. The natural-language Q&A box at
-the bottom needs an Anthropic API key, which you enter in the app at runtime —
+the bottom needs an Anthropic API key, which you enter in the app at runtime -
 it is never stored. Get a key at https://console.anthropic.com.
 
 ## Files
