@@ -15,6 +15,8 @@ tool does both: a deterministic calculator that shows the math seller by seller,
 plus adjustable plan levers that reprice all 200 sellers live so you can see the
 distribution and budget impact of any change before you ship it.
 
+<img width="2038" height="807" alt="image" src="https://github.com/user-attachments/assets/2e786d5e-6036-4754-852f-859638282e84" />
+
 ## What's the plan, Stan?
 
 The default plan follows recognized SaaS compensation best practice rather than
