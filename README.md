@@ -52,14 +52,21 @@ tier.
 - **Live what-if levers**  gate, tier ceiling, both accelerators, and an
   optional cap. The whole population updates dynamically. KPIs show spend delta
   versus the best practice baseline.
+  <img width="366" height="756" alt="image" src="https://github.com/user-attachments/assets/aefc839d-c25b-4e1e-9bb7-2f3a50ae0969" />
+
 - **Population dashboard** - earnings distribution by role, payout curve versus
   baseline, per-band breakdown, top earner by role.
+  <img width="835" height="408" alt="image" src="https://github.com/user-attachments/assets/1dd6a256-d9e7-4ab4-a32b-6c4f221291fe" />
+
 - **Seller explainer** - pick any seller and see an auditable, step-by-step
   payout calculation.
+  <img width="936" height="534" alt="image" src="https://github.com/user-attachments/assets/4c39f872-7c15-46d4-9d52-df77f67eb3aa" />
+  
 - **Claude Q&A layer (optional, bring-your-own-key)** - ask natural-language
   questions like "who would be underwater if we capped at 130%?" or "How does the plan work for an AE?" 
   The model answers against the priced data and current plan rules. Your key is used only
   for the request and never stored.
+   <img width="907" height="411" alt="image" src="https://github.com/user-attachments/assets/18957332-efc7-4fbe-bcba-071d308a682f" />
 
 ## Getting started (first-time setup)
 
